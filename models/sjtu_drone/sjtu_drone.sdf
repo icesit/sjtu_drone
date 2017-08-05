@@ -72,7 +72,7 @@
 	<plugin name='ros_imu' filename='libplugin_ros_imu.so'>
 	</plugin> 
 	<imu>
-		<noise>	
+<!--		<noise>	
 			<rate>
 				<mean> 0 </mean>
 				<stddev> 0 </stddev>
@@ -81,7 +81,7 @@
 				<mean> 0 </mean>
 				<stddev> 0.00 </stddev>
 			</accel>
-		</noise>
+		</noise>-->
 	</imu>
 	</sensor>
 
@@ -114,11 +114,11 @@
             <near>0.1</near>
             <far>100</far>
           </clip>
-          <noise>
+<!--          <noise>
             <type>gaussian</type>
             <mean>0.0</mean>
             <stddev>0.005</stddev>
-          </noise>
+          </noise>-->
         </camera>
 	<pose> 0.2 0.0 0.0 0 0 0 </pose>
         <always_on>1</always_on>
@@ -142,11 +142,11 @@
             <near>0.1</near>
             <far>100</far>
           </clip>
-          <noise>
+<!--          <noise>
             <type>gaussian</type>
             <mean>0.0</mean>
             <stddev>0.005</stddev>
-          </noise>
+          </noise>-->
         </camera>
 	<pose> 0.0 0.0 0.0 0 1.570796326794897 0 </pose>
         <always_on>1</always_on>
@@ -159,7 +159,7 @@
 
 
 <!-- %%%%%%%%%%%%%%%%%%  laser sensor  %%%%%%%%%%%%%%%%%%%%%%%%%% -->
-	<sensor name='sensor_laser' type='ray'>
+<!--	<sensor name='sensor_laser' type='ray'>
 	<always_on>0</always_on>
 	<visualize>0</visualize>
 	<update_rate>100</update_rate>
@@ -173,14 +173,14 @@
             	<resolution>1</resolution>
             	<min_angle>-1.570796</min_angle>
             	<max_angle>1.570796</max_angle>
-            </horizontal>
+            </horizontal>-->
 	    <!--<vertical>
             	<samples>500</samples>
             	<resolution>1</resolution>
             	<min_angle>-1.570796</min_angle>
             	<max_angle>1.570796</max_angle>
             </vertical>-->
-          </scan>	  
+<!--          </scan>	  
 	  <range>
           	<min>0.10</min>
           	<max>500.0</max>
@@ -192,7 +192,7 @@
           	<stddev>0.01</stddev>
           </noise>
 	</ray>
-	</sensor> 
+	</sensor> -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
 
 

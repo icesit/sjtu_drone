@@ -43,3 +43,13 @@ downward looking camera: /drone/down_camera/image_raw
 sonar data:  /drone/sonar
 laser range data: /drone/laser
 ```
+
+# Modify by XueWuyang
+This version is modify by XueWuyang to make this simulation work on ubuntu 16.04. 
+## State
+* now it can work on ubuntu 16.04
+* noise in ./models/sjtu_drone/sjtu_drone.sdf is removed
+* no laser sensor is in origin program
+* still some warnings exist:
+  [Wrn] [msgs.cc:1655] Conversion of sensor type[imu] not suppported.
+  [Wrn] [msgs.cc:1655] Conversion of sensor type[sonar] not suppported.
