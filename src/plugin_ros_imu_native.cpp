@@ -11,7 +11,7 @@ void RosImuPlugin::Load(sensors::SensorPtr _sensor, sdf::ElementPtr /*_sdf*/){
     
     if (!_sensor)
         gzerr << "Invalid sensor pointer.\n";
-    this->imu_ = boost::dynamic_pointer_cast<sensors::ImuSensor>(_sensor);    
+    this->imu_ = std::dynamic_pointer_cast<sensors::ImuSensor>(_sensor);
     if (!this->imu_){
         gzerr << "ImuPlugin equires a ImuSensor.\n";
         return;

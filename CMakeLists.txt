@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8.10)
 project(sjtu_drone)
+SET(CMAKE_CXX_FLAGS -std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -186,18 +187,18 @@ set_target_properties( plugin_ros_sonar
 )
 
 ################## 8. A laser sensor plugin for the quadrotor ####################
-add_library( plugin_ros_laser SHARED
-    src/plugin_ros_laser.cpp
-    include/plugin_ros_laser.h
-)
+#add_library( plugin_ros_laser SHARED
+#    src/plugin_ros_laser.cpp
+#    include/plugin_ros_laser.h
+#)
 
-target_link_libraries( plugin_ros_laser
-    ${catkin_LIBRARIES}
-    ${GAZEBO_LIBRARIES}
-)
+#target_link_libraries( plugin_ros_laser
+#    ${catkin_LIBRARIES}
+#    ${GAZEBO_LIBRARIES}
+#)
 
-set_target_properties( plugin_ros_laser
-    PROPERTIES
-    LIBRARY_OUTPUT_DIRECTORY
-    ${PROJECT_SOURCE_DIR}/plugins
-)
+#set_target_properties( plugin_ros_laser
+#    PROPERTIES
+#    LIBRARY_OUTPUT_DIRECTORY
+#    ${PROJECT_SOURCE_DIR}/plugins
+#)
