@@ -24,26 +24,6 @@
       <real_time_update_rate>1000</real_time_update_rate>
       <max_step_size>0.001</max_step_size>
     </physics>
-    <light type="directional" name="directional_light_2">
-      <pose>0 0 20 0 0 0</pose>
-      <diffuse>1 1 1 1</diffuse>
-      <specular>1 1 1 1</specular>
-      <attenuation>
-        <range>300</range>
-      </attenuation>
-      <direction>-1 1 -1</direction>
-      <cast_shadows>false</cast_shadows>
-    </light>
-    <light type="directional" name="directional_light_3">
-      <pose>0 0 20 0 0 0</pose>
-      <diffuse>1 1 1 1</diffuse>
-      <specular>1 1 1 1</specular>
-      <attenuation>
-        <range>300</range>
-      </attenuation>
-      <direction>-1 -1 -1</direction>
-      <cast_shadows>false</cast_shadows>
-    </light>
     <!-- Ground Plane -->
     <model name="plane1_model">
       <link name="body">
@@ -95,11 +75,11 @@
     </model>
     <model name="fly_indoor">
       <link name="fly_indoor_link">
-        <pose>0 0 0 0 0 0</pose>
+        <pose>3 -2 0 0 0 0</pose>
         <!--<collision name="fly_indoor_collision">
           <geometry>
             <mesh>
-              <uri>file://meshes/for_contest_part1.dae</uri>
+              <uri>file://meshes/assault.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -107,7 +87,7 @@
         <visual name="fly_indoor_visual">
           <geometry>
             <mesh>
-              <uri>file://meshes/for_contest_part1.dae</uri>
+              <uri>file://meshes/assault.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>

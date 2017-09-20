@@ -368,15 +368,15 @@ void DroneSimpleController::UpdateDynamics(double dt){
     
     //publish the velocity
     geometry_msgs::Twist tw;
-    tw.linear.x = body_vel.x;
-    tw.linear.y = body_vel.y;
-    tw.linear.z = body_vel.z;
+    tw.linear.x = velocity.x;//body_vel.x;
+    tw.linear.y = velocity.y;//body_vel.y;
+    tw.linear.z = velocity.z;//body_vel.z;
     pub_gt_vec_.publish(tw);
     
     //publish the acceleration
-    tw.linear.x = body_acc.x;
-    tw.linear.y = body_acc.y;
-    tw.linear.z = body_acc.z;
+    tw.linear.x = acceleration.x;//body_acc.x;
+    tw.linear.y = acceleration.y;//body_acc.y;
+    tw.linear.z = acceleration.z;//body_acc.z;
     pub_gt_acc_.publish(tw);
     
             
