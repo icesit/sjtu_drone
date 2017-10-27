@@ -9,7 +9,7 @@
 namespace gazebo {
 class RosImuPlugin: public SensorPlugin{
 public:
-    RosImuPlugin(){topicName = "drone/imu";}
+    RosImuPlugin(){topicName = "/drone/imu";}
     virtual ~RosImuPlugin(){}
     
     virtual void Load(sensors::SensorPtr _sensor, sdf::ElementPtr _sdf);

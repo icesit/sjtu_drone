@@ -96,7 +96,7 @@
 	</plugin> 
 	<sonar>
 		<min>0</min>
-		<max>15</max>
+		<max>20</max>
         	<radius>1.33974596</radius>
         </sonar>
         </sensor>
